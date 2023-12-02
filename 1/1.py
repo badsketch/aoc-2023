@@ -26,7 +26,7 @@ def part1() -> None:
             right, _ = get_right_digit(line)
             calibration_val = int(str(left) + str(right))
             total += calibration_val
-    print(total)
+    return total
 
 digits = {
     "one": 1,
@@ -81,10 +81,10 @@ def part2() -> None:
             
             calibration_val = int(str(left) + str(right))
             total += calibration_val
-    print(total)
+    return total
             
     
 
 if __name__ == "__main__":
-    # part1()
-    part2()
+    print(part1())
+    print(part2())
